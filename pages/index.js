@@ -92,9 +92,6 @@ export default function Home() {
             </a>
           </section>
 
-
-          
-
           <table  cellPadding="10" cellSpacing="0" style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
                 <tr style={{ backgroundColor: '#0d0d0d' }}>
