@@ -1,0 +1,214 @@
+/* Palette de couleurs : Rouge et Noir */
+.page {
+  background-color: #0d0d0d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px; /* Padding légèrement réduit */
+  gap: 48px; /* Gap légèrement réduit */
+  font-family: "GeistVF", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px; /* Écart réduit entre les éléments du navbar */
+  padding: 12px;
+  background-color: #111;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 15px;
+}
+
+.navbar a:hover {
+  color: red;
+}
+
+.main {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.5rem; /* Taille réduite */
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.extraInfo {
+  color: red;
+  font-size: 1.8rem; /* Taille réduite */
+  font-weight: 100;
+  margin-bottom: 35px;
+}
+
+.description {
+  font-size: 1.3rem;
+  color: #b0b0b0;
+  margin-bottom: 10px;
+}
+
+.contact {
+  display: flex; /* Met les éléments côte à côte */
+  justify-content: space-around; /* Espace les éléments uniformément */
+  align-items: center; /* Centrer les éléments verticalement */
+  background-color: white; /* Fond blanc */
+  border: 2px solid red; /* Bordure rouge */
+  border-radius: 12px; /* Bordures arrondies */
+  padding: 20px; /* Espacement interne */
+  margin-bottom: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Animation pour le hover */
+}
+
+.contact a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Écart entre l'icône et le texte */
+  text-decoration: none; /* Supprime la décoration par défaut */
+  color: black; /* Couleur de texte par défaut */
+  padding: 10px 20px;
+  border-radius: 8px; /* Bordures arrondies pour les liens */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.contact a:hover {
+  background-color: red; /* Fond rouge au survol */
+  color: white; /* Texte blanc au survol */
+  transform: scale(1.05); /* Légère animation de zoom */
+}
+
+.contact img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid red;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: red;
+}
+
+.maincard {
+  padding: 20px;
+}
+
+.maincard li {
+  padding: 10px;
+  justify-content: left;
+  text-align: left;
+}
+
+/* Grille pour les cartes */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Cartes alignées en grille, légèrement plus petites */
+  gap: 24px; /* Espacement réduit entre les cartes */
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  background-color: #1a1a1a;
+  padding: 12px; /* Réduction du padding */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Légère réduction de l'ombre */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(0.85); 
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(0.95); /* Animation de hover légèrement réduite */
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+  color: red;
+  font-size: 1.6rem; /* Taille réduite du titre des cartes */
+}
+
+.card p {
+  color: #e5e5e5;
+  font-size: 1.1rem; /* Taille du texte légèrement réduite */
+  margin-bottom: 16px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.info {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.info table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1a1a1a;
+  min-width: 600px;
+}
+
+.info th, .info td {
+  border: 2px solid red;
+  padding: 16px;
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.info thead {
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.info tbody tr:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer {
+  background-color: #111;
+  color: #e5e5e5;
+  padding: 16px;
+  text-align: center;
+  border-top: 2px solid red;
+}
+
+.footer a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: red;
+}
